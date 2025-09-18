@@ -254,10 +254,10 @@
             tabItemDetails.Controls.Add(lblCategoryDetail);
             tabItemDetails.Controls.Add(lblNameDetail);
             tabItemDetails.Controls.Add(picBoxProduct);
-            tabItemDetails.Location = new Point(4, 25);
+            tabItemDetails.Location = new Point(4, 24);
             tabItemDetails.Name = "tabItemDetails";
             tabItemDetails.Padding = new Padding(3);
-            tabItemDetails.Size = new Size(450, 568);
+            tabItemDetails.Size = new Size(450, 569);
             tabItemDetails.TabIndex = 1;
             tabItemDetails.Text = "Product Details";
             tabItemDetails.UseWaitCursor = true;
@@ -349,7 +349,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Yu Gothic", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(13, 33);
+            label1.Location = new Point(13, 25);
             label1.Name = "label1";
             label1.Size = new Size(315, 36);
             label1.TabIndex = 16;
@@ -399,7 +399,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Moccasin;
+            BackColor = Color.Ivory;
             ClientSize = new Size(800, 607);
             Controls.Add(btnUploadImage);
             Controls.Add(lblProductImage);
