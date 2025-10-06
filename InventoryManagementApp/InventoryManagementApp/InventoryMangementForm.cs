@@ -9,37 +9,7 @@ namespace InventoryManagementApp
             InitializeComponent();
         }
 
-        private void lstProductInventory_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int selectedIndex = lstProductInventory.SelectedIndex;
-            if (selectedIndex >= 0)
-            {
-
-                var product = products[selectedIndex];
-
-                lblNameDetail.Text = $"Name: {product.Name}";
-                lblCategoryDetail.Text = $"Category: {product.Category}";
-                lblDescriptionDetail.Text = $"Description: {product.Description}";
-                lblPriceDetail.Text = $"Price: {product.Price:C}";
-                lblQuantityDetail.Text = $"Quantity: {product.Quantity}";
-                lblProductIDDetail.Text = $"Product ID: {product.ProductId}";
-
-                // Load and display image if path is valid
-                if (!string.IsNullOrEmpty(product.ImagePath) && File.Exists(product.ImagePath))
-                {
-                    picBoxProduct.Image = Image.FromFile(product.ImagePath);
-                }
-                else
-                {
-                    picBoxProduct.Image = null; // Or set a default image
-                }
-            }
-            else
-            {
-                ClearProductDetails();
-            }
-        }
-
+        // Adding new products to the data grid view table.
         private void btnAdd_Click(object sender, EventArgs e)
         {
             try
@@ -72,18 +42,18 @@ namespace InventoryManagementApp
             }
         }
 
+        // Refresh the DataGridView to show current inventory
         private void UpdateProductList()
         {
-            int prevIndex = lstProductInventory.SelectedIndex;
-            lstProductInventory.Items.Clear();
+            dataGridViewInventory.Rows.Clear();
             foreach (Product p in products)
             {
-                lstProductInventory.Items.Add(p.ToString());
+                dataGridViewInventory.Rows.Add(false, p.Name, p.Category, p.Quantity, p.Price.ToString("C"), p.ProductId, p.Description);
             }
             // Restore selection if possible
             if (products.Count > 0)
             {
-                lstProductInventory.SelectedIndex = Math.Min(prevIndex, products.Count - 1);
+                dataGridViewInventory.Rows[0].Selected = true;
             }
             else
             {
@@ -93,25 +63,24 @@ namespace InventoryManagementApp
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            int prevIndex = lstProductInventory.SelectedIndex;
-            if (prevIndex >= 0)
+            // Collect indices to remove (in reverse order to avoid shifting)
+            var indicesToRemove = new List<int>();
+            for (int i = dataGridViewInventory.Rows.Count - 1; i >= 0; i--)
             {
-                products.RemoveAt(prevIndex);
-                UpdateProductList();
-                // Restore selection if possible
-                if (products.Count > 0)
+                var row = dataGridViewInventory.Rows[i];
+                if (row.Cells["ColSelect"].Value is bool isChecked && isChecked)
                 {
-                    lstProductInventory.SelectedIndex = Math.Min(prevIndex, products.Count - 1);
-                }
-                else
-                {
-                    ClearProductDetails();
+                    indicesToRemove.Add(i);
                 }
             }
-            else
+
+            // Remove from products list and DataGridView
+            foreach (int i in indicesToRemove)
             {
-                MessageBox.Show("Select a product to remove.");
+                if (i >= 0 && i < products.Count)
+                    products.RemoveAt(i);
             }
+            UpdateProductList();
         }
 
         private void btnUploadImage_Click(object sender, EventArgs e)
@@ -133,11 +102,11 @@ namespace InventoryManagementApp
                 picBoxProduct.Tag = imagePath;
 
                 // Associate image path with selected product
-                int selectedIndex = lstProductInventory.SelectedIndex;
-                if (selectedIndex >= 0 && selectedIndex < products.Count)
-                {
-                    products[selectedIndex].ImagePath = imagePath;
-                }
+                //int selectedIndex = dataGridViewInventory
+                //if (selectedIndex >= 0 && selectedIndex < products.Count)
+                //{
+                    //products[selectedIndex].ImagePath = imagePath;
+                //}
             }
         }
         private void ClearProductDetails()

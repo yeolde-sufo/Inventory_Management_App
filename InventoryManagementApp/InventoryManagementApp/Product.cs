@@ -112,10 +112,7 @@ namespace InventoryManagementApp
             get { return imagePath; }
             set
             {
-                if (!string.IsNullOrEmpty(value))
-                    imagePath = value;
-                else
-                    throw new ArgumentException("Image path cannot be empty");
+                imagePath = string.IsNullOrEmpty(value) ? "default.png" : value;
             }
         }
 

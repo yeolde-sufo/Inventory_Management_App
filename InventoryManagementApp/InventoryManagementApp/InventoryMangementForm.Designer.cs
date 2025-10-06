@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             txtName = new TextBox();
             txtQuantity = new TextBox();
             txtProductId = new TextBox();
@@ -43,7 +47,7 @@
             btnRemove = new Button();
             tabControlInventory = new TabControl();
             tabInventory = new TabPage();
-            lstProductInventory = new ListBox();
+            dataGridViewInventory = new DataGridView();
             tabItemDetails = new TabPage();
             lblDescriptionDetail = new Label();
             lblPriceDetail = new Label();
@@ -52,21 +56,30 @@
             lblCategoryDetail = new Label();
             lblNameDetail = new Label();
             picBoxProduct = new PictureBox();
-            label1 = new Label();
+            lblLogo = new Label();
             cboxCategory = new ComboBox();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             lblProductImage = new Label();
             btnUploadImage = new Button();
             openFileDialog1 = new OpenFileDialog();
+            label1 = new Label();
+            ColSelect = new DataGridViewCheckBoxColumn();
+            colName = new DataGridViewTextBoxColumn();
+            ColCategory = new DataGridViewTextBoxColumn();
+            ColQuantity = new DataGridViewTextBoxColumn();
+            ColPrice = new DataGridViewTextBoxColumn();
+            dataGridViewProductID = new DataGridViewTextBoxColumn();
+            ColDescription = new DataGridViewTextBoxColumn();
             tabControlInventory.SuspendLayout();
             tabInventory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewInventory).BeginInit();
             tabItemDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picBoxProduct).BeginInit();
             SuspendLayout();
             // 
             // txtName
             // 
-            txtName.Location = new Point(131, 96);
+            txtName.Location = new Point(138, 380);
             txtName.Name = "txtName";
             txtName.Size = new Size(202, 27);
             txtName.TabIndex = 0;
@@ -74,7 +87,7 @@
             // 
             // txtQuantity
             // 
-            txtQuantity.Location = new Point(131, 245);
+            txtQuantity.Location = new Point(468, 373);
             txtQuantity.Name = "txtQuantity";
             txtQuantity.Size = new Size(202, 27);
             txtQuantity.TabIndex = 3;
@@ -82,7 +95,7 @@
             // 
             // txtProductId
             // 
-            txtProductId.Location = new Point(131, 198);
+            txtProductId.Location = new Point(138, 474);
             txtProductId.Name = "txtProductId";
             txtProductId.Size = new Size(202, 27);
             txtProductId.TabIndex = 2;
@@ -94,7 +107,7 @@
             lblName.BackColor = Color.Transparent;
             lblName.Font = new Font("Yu Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblName.ForeColor = SystemColors.ActiveCaptionText;
-            lblName.Location = new Point(13, 102);
+            lblName.Location = new Point(15, 386);
             lblName.Name = "lblName";
             lblName.Size = new Size(117, 21);
             lblName.TabIndex = 4;
@@ -107,7 +120,7 @@
             lblCategory.BackColor = Color.Transparent;
             lblCategory.Font = new Font("Yu Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblCategory.ForeColor = SystemColors.ActiveCaptionText;
-            lblCategory.Location = new Point(13, 145);
+            lblCategory.Location = new Point(15, 429);
             lblCategory.Name = "lblCategory";
             lblCategory.Size = new Size(77, 21);
             lblCategory.TabIndex = 5;
@@ -120,7 +133,7 @@
             lblProductId.BackColor = Color.Transparent;
             lblProductId.Font = new Font("Yu Gothic", 12F);
             lblProductId.ForeColor = SystemColors.ActiveCaptionText;
-            lblProductId.Location = new Point(13, 197);
+            lblProductId.Location = new Point(15, 473);
             lblProductId.Name = "lblProductId";
             lblProductId.Size = new Size(87, 21);
             lblProductId.TabIndex = 7;
@@ -133,7 +146,7 @@
             lblQuantity.BackColor = Color.Transparent;
             lblQuantity.Font = new Font("Yu Gothic", 12F);
             lblQuantity.ForeColor = SystemColors.ActiveCaptionText;
-            lblQuantity.Location = new Point(13, 244);
+            lblQuantity.Location = new Point(368, 379);
             lblQuantity.Name = "lblQuantity";
             lblQuantity.Size = new Size(73, 21);
             lblQuantity.TabIndex = 6;
@@ -142,7 +155,7 @@
             // 
             // txtPrice
             // 
-            txtPrice.Location = new Point(132, 292);
+            txtPrice.Location = new Point(468, 416);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(202, 27);
             txtPrice.TabIndex = 4;
@@ -150,7 +163,7 @@
             // 
             // richTxtDescription
             // 
-            richTxtDescription.Location = new Point(131, 341);
+            richTxtDescription.Location = new Point(468, 472);
             richTxtDescription.Name = "richTxtDescription";
             richTxtDescription.Size = new Size(202, 96);
             richTxtDescription.TabIndex = 5;
@@ -163,7 +176,7 @@
             lblPrice.BackColor = Color.Transparent;
             lblPrice.Font = new Font("Yu Gothic", 12F);
             lblPrice.ForeColor = SystemColors.ActiveCaptionText;
-            lblPrice.Location = new Point(13, 292);
+            lblPrice.Location = new Point(368, 418);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(48, 21);
             lblPrice.TabIndex = 11;
@@ -176,7 +189,7 @@
             lblDescription.BackColor = Color.Transparent;
             lblDescription.Font = new Font("Yu Gothic", 12F);
             lblDescription.ForeColor = SystemColors.ActiveCaptionText;
-            lblDescription.Location = new Point(13, 340);
+            lblDescription.Location = new Point(368, 472);
             lblDescription.Name = "lblDescription";
             lblDescription.Size = new Size(94, 21);
             lblDescription.TabIndex = 12;
@@ -187,9 +200,9 @@
             // 
             btnAdd.BackColor = Color.PaleGreen;
             btnAdd.Font = new Font("Yu Gothic", 12F);
-            btnAdd.Location = new Point(10, 500);
+            btnAdd.Location = new Point(7, 573);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(156, 97);
+            btnAdd.Size = new Size(156, 44);
             btnAdd.TabIndex = 8;
             btnAdd.Text = "Add +";
             btnAdd.UseVisualStyleBackColor = false;
@@ -200,9 +213,9 @@
             // 
             btnRemove.BackColor = Color.Pink;
             btnRemove.Font = new Font("Yu Gothic", 12F);
-            btnRemove.Location = new Point(172, 500);
+            btnRemove.Location = new Point(178, 573);
             btnRemove.Name = "btnRemove";
-            btnRemove.Size = new Size(162, 97);
+            btnRemove.Size = new Size(162, 44);
             btnRemove.TabIndex = 9;
             btnRemove.Text = "Remove -";
             btnRemove.UseVisualStyleBackColor = false;
@@ -211,38 +224,60 @@
             // 
             // tabControlInventory
             // 
+            tabControlInventory.Appearance = TabAppearance.FlatButtons;
             tabControlInventory.Controls.Add(tabInventory);
             tabControlInventory.Controls.Add(tabItemDetails);
-            tabControlInventory.Location = new Point(339, 0);
+            tabControlInventory.Location = new Point(-2, 61);
             tabControlInventory.Name = "tabControlInventory";
             tabControlInventory.SelectedIndex = 0;
-            tabControlInventory.Size = new Size(458, 597);
+            tabControlInventory.Size = new Size(1152, 281);
             tabControlInventory.TabIndex = 10;
             tabControlInventory.UseWaitCursor = true;
             // 
             // tabInventory
             // 
             tabInventory.BackColor = Color.Transparent;
-            tabInventory.Controls.Add(lstProductInventory);
-            tabInventory.Location = new Point(4, 25);
+            tabInventory.Controls.Add(dataGridViewInventory);
+            tabInventory.Location = new Point(4, 28);
             tabInventory.Name = "tabInventory";
             tabInventory.Padding = new Padding(3);
-            tabInventory.Size = new Size(450, 568);
+            tabInventory.Size = new Size(1144, 249);
             tabInventory.TabIndex = 0;
             tabInventory.Text = "Inventory";
             tabInventory.UseWaitCursor = true;
             // 
-            // lstProductInventory
+            // dataGridViewInventory
             // 
-            lstProductInventory.BorderStyle = BorderStyle.FixedSingle;
-            lstProductInventory.FormattingEnabled = true;
-            lstProductInventory.HorizontalScrollbar = true;
-            lstProductInventory.Location = new Point(6, 7);
-            lstProductInventory.Name = "lstProductInventory";
-            lstProductInventory.Size = new Size(438, 546);
-            lstProductInventory.TabIndex = 7;
-            lstProductInventory.UseWaitCursor = true;
-            lstProductInventory.SelectedIndexChanged += lstProductInventory_SelectedIndexChanged;
+            dataGridViewCellStyle1.BackColor = Color.Silver;
+            dataGridViewInventory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewInventory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewInventory.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewInventory.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.Font = new Font("Yu Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridViewInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewInventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewInventory.Columns.AddRange(new DataGridViewColumn[] { ColSelect, colName, ColCategory, ColQuantity, ColPrice, dataGridViewProductID, ColDescription });
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = SystemColors.Window;
+            dataGridViewCellStyle3.Font = new Font("Yu Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dataGridViewInventory.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewInventory.Location = new Point(3, 3);
+            dataGridViewInventory.Name = "dataGridViewInventory";
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewInventory.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewInventory.Size = new Size(1135, 240);
+            dataGridViewInventory.TabIndex = 0;
+            dataGridViewInventory.UseWaitCursor = true;
             // 
             // tabItemDetails
             // 
@@ -254,10 +289,10 @@
             tabItemDetails.Controls.Add(lblCategoryDetail);
             tabItemDetails.Controls.Add(lblNameDetail);
             tabItemDetails.Controls.Add(picBoxProduct);
-            tabItemDetails.Location = new Point(4, 24);
+            tabItemDetails.Location = new Point(4, 27);
             tabItemDetails.Name = "tabItemDetails";
             tabItemDetails.Padding = new Padding(3);
-            tabItemDetails.Size = new Size(450, 569);
+            tabItemDetails.Size = new Size(1144, 250);
             tabItemDetails.TabIndex = 1;
             tabItemDetails.Text = "Product Details";
             tabItemDetails.UseWaitCursor = true;
@@ -344,24 +379,24 @@
             picBoxProduct.TabStop = false;
             picBoxProduct.UseWaitCursor = true;
             // 
-            // label1
+            // lblLogo
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Yu Gothic", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(13, 25);
-            label1.Name = "label1";
-            label1.Size = new Size(315, 36);
-            label1.TabIndex = 16;
-            label1.Text = "PC Systems and Parts";
-            label1.UseWaitCursor = true;
+            lblLogo.AutoSize = true;
+            lblLogo.BackColor = Color.Transparent;
+            lblLogo.Font = new Font("Yu Gothic", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLogo.Location = new Point(14, 9);
+            lblLogo.Name = "lblLogo";
+            lblLogo.Size = new Size(416, 36);
+            lblLogo.TabIndex = 16;
+            lblLogo.Text = "ECPC System Parts Inventory";
+            lblLogo.UseWaitCursor = true;
             // 
             // cboxCategory
             // 
             cboxCategory.Font = new Font("Yu Gothic", 10F);
             cboxCategory.FormattingEnabled = true;
             cboxCategory.Items.AddRange(new object[] { "CPU", "CPU Cooler", "Motherboard", "Memory", "Storage", "Video Card", "Case", "Power Supply", "Monitor" });
-            cboxCategory.Location = new Point(131, 146);
+            cboxCategory.Location = new Point(138, 425);
             cboxCategory.Name = "cboxCategory";
             cboxCategory.Size = new Size(202, 25);
             cboxCategory.TabIndex = 1;
@@ -373,7 +408,7 @@
             lblProductImage.BackColor = Color.Transparent;
             lblProductImage.Font = new Font("Yu Gothic", 12F);
             lblProductImage.ForeColor = SystemColors.ActiveCaptionText;
-            lblProductImage.Location = new Point(13, 461);
+            lblProductImage.Location = new Point(368, 596);
             lblProductImage.Name = "lblProductImage";
             lblProductImage.Size = new Size(56, 21);
             lblProductImage.TabIndex = 18;
@@ -382,7 +417,7 @@
             // 
             // btnUploadImage
             // 
-            btnUploadImage.Location = new Point(131, 452);
+            btnUploadImage.Location = new Point(468, 587);
             btnUploadImage.Name = "btnUploadImage";
             btnUploadImage.Size = new Size(202, 42);
             btnUploadImage.TabIndex = 6;
@@ -395,16 +430,85 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Yu Gothic", 21F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(997, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 36);
+            label1.TabIndex = 19;
+            label1.Text = "Admin";
+            label1.UseWaitCursor = true;
+            // 
+            // ColSelect
+            // 
+            ColSelect.FillWeight = 15F;
+            ColSelect.HeaderText = "Select";
+            ColSelect.Name = "ColSelect";
+            ColSelect.Resizable = DataGridViewTriState.True;
+            ColSelect.SortMode = DataGridViewColumnSortMode.Automatic;
+            // 
+            // colName
+            // 
+            colName.FillWeight = 46.46345F;
+            colName.HeaderText = "Product Name";
+            colName.Name = "colName";
+            colName.ReadOnly = true;
+            colName.Resizable = DataGridViewTriState.False;
+            // 
+            // ColCategory
+            // 
+            ColCategory.FillWeight = 46.46345F;
+            ColCategory.HeaderText = "Category";
+            ColCategory.Name = "ColCategory";
+            ColCategory.ReadOnly = true;
+            ColCategory.Resizable = DataGridViewTriState.False;
+            // 
+            // ColQuantity
+            // 
+            ColQuantity.FillWeight = 46.46345F;
+            ColQuantity.HeaderText = "Quantity";
+            ColQuantity.Name = "ColQuantity";
+            ColQuantity.ReadOnly = true;
+            ColQuantity.Resizable = DataGridViewTriState.False;
+            // 
+            // ColPrice
+            // 
+            ColPrice.FillWeight = 46.46345F;
+            ColPrice.HeaderText = "Price";
+            ColPrice.Name = "ColPrice";
+            ColPrice.ReadOnly = true;
+            ColPrice.Resizable = DataGridViewTriState.False;
+            // 
+            // dataGridViewProductID
+            // 
+            dataGridViewProductID.FillWeight = 46.46345F;
+            dataGridViewProductID.HeaderText = "Product ID";
+            dataGridViewProductID.Name = "dataGridViewProductID";
+            dataGridViewProductID.ReadOnly = true;
+            dataGridViewProductID.Resizable = DataGridViewTriState.False;
+            // 
+            // ColDescription
+            // 
+            ColDescription.FillWeight = 46.46345F;
+            ColDescription.HeaderText = "Product Description";
+            ColDescription.Name = "ColDescription";
+            ColDescription.ReadOnly = true;
+            ColDescription.Resizable = DataGridViewTriState.False;
+            // 
             // InventoryMangementForm
             // 
             AutoScaleDimensions = new SizeF(7F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Ivory;
-            ClientSize = new Size(800, 607);
+            BackColor = Color.FromArgb(224, 224, 224);
+            ClientSize = new Size(1154, 695);
+            Controls.Add(label1);
             Controls.Add(btnUploadImage);
             Controls.Add(lblProductImage);
             Controls.Add(cboxCategory);
-            Controls.Add(label1);
+            Controls.Add(lblLogo);
             Controls.Add(tabControlInventory);
             Controls.Add(btnRemove);
             Controls.Add(btnAdd);
@@ -428,6 +532,7 @@
             UseWaitCursor = true;
             tabControlInventory.ResumeLayout(false);
             tabInventory.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewInventory).EndInit();
             tabItemDetails.ResumeLayout(false);
             tabItemDetails.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picBoxProduct).EndInit();
@@ -453,8 +558,7 @@
         private TabControl tabControlInventory;
         private TabPage tabInventory;
         private TabPage tabItemDetails;
-        private Label label1;
-        private ListBox lstProductInventory;
+        private Label lblLogo;
         private ComboBox cboxCategory;
         private Label lblDescriptionDetail;
         private Label lblPriceDetail;
@@ -467,5 +571,14 @@
         private Label lblProductImage;
         private Button btnUploadImage;
         private OpenFileDialog openFileDialog1;
+        private DataGridView dataGridViewInventory;
+        private Label label1;
+        private DataGridViewCheckBoxColumn ColSelect;
+        private DataGridViewTextBoxColumn colName;
+        private DataGridViewTextBoxColumn ColCategory;
+        private DataGridViewTextBoxColumn ColQuantity;
+        private DataGridViewTextBoxColumn ColPrice;
+        private DataGridViewTextBoxColumn dataGridViewProductID;
+        private DataGridViewTextBoxColumn ColDescription;
     }
 }

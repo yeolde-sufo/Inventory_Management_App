@@ -14,3 +14,20 @@ C:\OOP10 - BSIT2A (ENT)\InventoryManagementApp\InventoryManagementApp\obj\Debug\
 C:\OOP10 - BSIT2A (ENT)\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.pdb
 C:\OOP10 - BSIT2A (ENT)\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.genruntimeconfig.cache
 C:\OOP10 - BSIT2A (ENT)\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\ref\InventoryManagementApp.dll
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.exe
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.deps.json
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.runtimeconfig.json
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.dll
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.pdb
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.InventoryMangementForm.resources
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.csproj.GenerateResource.cache
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.AssemblyInfoInputs.cache
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.AssemblyInfo.cs
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.csproj.CoreCompileInputs.cache
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.sourcelink.json
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.dll
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\refint\InventoryManagementApp.dll
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.pdb
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.genruntimeconfig.cache
+F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\ref\InventoryManagementApp.dll
