@@ -31,3 +31,63 @@ F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementA
 F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.pdb
 F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.genruntimeconfig.cache
 F:\Zefwyn\Documents\Disk Documents\Documents\2nd Year\OOP10\InventoryManagementApp\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\ref\InventoryManagementApp.dll
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.exe
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.deps.json
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.runtimeconfig.json
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.dll
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.pdb
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.InventoryMangementForm.resources
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.csproj.GenerateResource.cache
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.AssemblyInfoInputs.cache
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.AssemblyInfo.cs
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.csproj.CoreCompileInputs.cache
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.sourcelink.json
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.dll
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\refint\InventoryManagementApp.dll
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.pdb
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.genruntimeconfig.cache
+C:\Users\yelyt\Source\Repos\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\ref\InventoryManagementApp.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.exe
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.deps.json
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.runtimeconfig.json
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.pdb
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.InventoryMangementForm.resources
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.csproj.GenerateResource.cache
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.AssemblyInfoInputs.cache
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.AssemblyInfo.cs
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.csproj.CoreCompileInputs.cache
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.sourcelink.json
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\refint\InventoryManagementApp.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.pdb
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.genruntimeconfig.cache
+C:\Users\yelyt\source\repos\yeolde-sufo\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\ref\InventoryManagementApp.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.exe
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.deps.json
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.runtimeconfig.json
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.pdb
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.InventoryMangementForm.resources
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.csproj.GenerateResource.cache
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.AssemblyInfoInputs.cache
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.AssemblyInfo.cs
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.csproj.CoreCompileInputs.cache
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.sourcelink.json
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\refint\InventoryManagementApp.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.pdb
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.genruntimeconfig.cache
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\ref\InventoryManagementApp.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\InventoryManagementApp.dll.config
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\InventoryManagementApp.csproj.AssemblyReference.cache
+C:\Users\yelyt\source\repos\yeolde-sufo\New folder\Inventory-management-app\InventoryManagementApp\InventoryManagementApp\obj\Debug\net8.0-windows\Inventor.FF12EBF4.Up2Date
